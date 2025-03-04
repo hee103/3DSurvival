@@ -55,7 +55,7 @@ public class DayNightCycle : MonoBehaviour
         {
             go.SetActive(false);
         }
-        else if (lightSource.intensity > 0 && go.activeInHierarchy)
+        else if (lightSource.intensity > 0 && !go.activeInHierarchy)
         {
              
       
