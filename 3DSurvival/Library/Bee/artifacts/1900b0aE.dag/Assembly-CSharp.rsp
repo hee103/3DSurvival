@@ -371,6 +371,7 @@
 "Assets/Scripts/ScriptableObject/ItemData.cs"
 "Assets/Scripts/UI/Condition.cs"
 "Assets/Scripts/UI/DamageIndicater.cs"
+"Assets/Scripts/UI/ItemSlot.cs"
 "Assets/Scripts/UI/UICondition.cs"
 -langversion:9.0
 
