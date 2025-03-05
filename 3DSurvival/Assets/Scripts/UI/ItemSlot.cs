@@ -19,16 +19,11 @@ public class ItemSlot : MonoBehaviour
     public int quantity;
 
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
+    private void Awake()
     {
         outline = GetComponent<Outline>();
     }
+
     private void OnEnable()
     {
         outline.enabled = equipped;
