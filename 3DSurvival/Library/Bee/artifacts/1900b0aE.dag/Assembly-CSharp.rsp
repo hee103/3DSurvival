@@ -373,6 +373,7 @@
 "Assets/Scripts/UI/DamageIndicater.cs"
 "Assets/Scripts/UI/ItemSlot.cs"
 "Assets/Scripts/UI/UICondition.cs"
+"Assets/Scripts/UI/UIInventory.cs"
 -langversion:9.0
 
 /deterministic

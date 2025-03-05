@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 54570606}
   - component: {fileID: 54570605}
   - component: {fileID: 54570604}
+  - component: {fileID: 54570607}
   m_Layer: 5
   m_Name: UIInventory
   m_TagString: Untagged
@@ -226,6 +227,29 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 1
   m_TargetDisplay: 0
+--- !u!114 &54570607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 54570602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 460693df43f419145b71c40fda2d0f0e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  slots: []
+  inventoryWindow: {fileID: 54570602}
+  slotPanel: {fileID: 126686319}
+  selectedItemName: {fileID: 865584902}
+  selectedItemDescription: {fileID: 443481951}
+  selectedStatName: {fileID: 837241984}
+  selectedStatValue: {fileID: 1243522702}
+  useButton: {fileID: 942894759}
+  equipButton: {fileID: 1649338488}
+  unequipButton: {fileID: 2127946353}
+  dropButton: {fileID: 213026499}
 --- !u!1001 &61017391
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5080,7 +5104,19 @@ MonoBehaviour:
     m_ActionId: 2a374429-43aa-4305-82c3-c395463bdc12
     m_ActionName: Player/Jump[/Keyboard/space]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1808803864}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: OnInventory
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 191cba93-84f1-47db-9722-b3787c4c075b
     m_ActionName: Player/Inventory[/Keyboard/tab]
   - m_PersistentCalls:
@@ -5129,6 +5165,7 @@ MonoBehaviour:
   minXLook: -85
   maxXLook: 85
   lookSensitivity: 0.1
+  canLook: 1
 --- !u!114 &1808803865
 MonoBehaviour:
   m_ObjectHideFlags: 0
